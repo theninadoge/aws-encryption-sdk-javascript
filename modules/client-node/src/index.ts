@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 export * from '@aws-crypto/encrypt-node'
-export * from '@aws-crypto/decrypt-node'
+export * from '@thedogenina/aws-crypto-decrypt-node'
 export * from '@aws-crypto/material-management-node'
 export * from '@aws-crypto/caching-materials-manager-node'
 export * from '@aws-crypto/kms-keyring-node'
@@ -15,7 +15,7 @@ import {
 } from '@aws-crypto/material-management-node'
 
 import { buildEncrypt } from '@aws-crypto/encrypt-node'
-import { buildDecrypt } from '@aws-crypto/decrypt-node'
+import { buildDecrypt } from '@thedogenina/aws-crypto-decrypt-node'
 
 export function buildClient(
   options?: CommitmentPolicy | ClientOptions
