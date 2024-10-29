@@ -86,7 +86,8 @@ export function getDecipherStream() {
         sequenceNumber,
         contentLength
       )
-      const decipher = getDecipher(iv).setAAD(
+      const decipher = getDecipher(iv)
+      decipher.setAAD(
         Buffer.from(
           messageAAD.buffer,
           messageAAD.byteOffset,
